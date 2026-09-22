@@ -14,4 +14,8 @@ app.get("/", (req, res) => {
 const authorsRouter = require("./routes/authors");
 app.use("/authors", authorsRouter);
 
+// Rutas de posts
+const postsRouter = require("./routes/posts");
+app.use("/posts", postsRouter);
+
 module.exports = app;
